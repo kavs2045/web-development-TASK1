@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPage</title>
+    <style>
+        .btn{
+            border-left:1000px;
+            background-color: black;
+            color: white;
+        }
+        .btn2{
+            background-color: crimson;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">LOGIN</button>
+    <div class="icon">
+        <h5><strong>CHECKOUT</strong></h5>
+    </div>
+    <div class="container">
+        <p><strong>Shipping Address</strong></p>
+        <form>
+            <input type="text"placeholder="First Name"required/>
+            <input type="text"placeholder="Last Name"required/><br><br>
+            <input type="text"placeholder="Street Address"><br><br>
+            <input type="text"placeholder="Apt/Build/Unit(Optional)"><br><br>
+            <input type="text"placeholder="city"required/>
+            <select name="Distric">
+                <option value="Select your District">Select your District</option>
+                <option value="Ariyalur">Ariyalur</option>
+                <option value="Perambalur">Perambalur</option>
+                <option value="Trichy">trichy</option>
+                <option value="Namakkal">Namakkal</option>
+                <option value="Erode">Erode</option>
+                <option value="Salem">Salem</option>
+            </select><br><br>
+            <input type="text"placeholder="Postal Code"><br><br>
+        </form>
+        <p><strong>Shipping Method </strong></p>
+        <p>Enter a shipping address to see accurate shipping option for your order</p><br><br>
+        <h4>GIFT OPTIONS</h4>
+    </div>
+    <h4>ORDER SUMMARY</h4><br>
+    <table>
+        <tr>
+            <td>Subtotal</td>
+            <td>$37.49 CDN</td>
+        </tr>
+        <tr>
+            <td>Taxes</td>
+            <td>__</td>
+        </tr>
+        <tr>
+            <td>Shipping(1 item)</td>
+            <td>__</td>
+        </tr>
+        <tr>
+            <td>TOTAL</td>
+            <td>$37.49 CDN</td>
+        </tr>
+    </table>
+    <div>
+         <h6>Apply a Promo Code Ur Discount (per one Order)</h6>
+        <input type="text"placeholder="PromoCode"required>
+        <button class="btn1">Apply</button>
+    </div><br>
+    <button class="btn2">Troop Id</button>
+</body>
+</html>
