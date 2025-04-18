@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            background-color: white;
+            justify-content: space-between;
+            margin-left: 50px;
+            margin-right: 50px;
+            gap: 20px;
+        }
+        .links{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            font-size: medium;
+            gap: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .box{
+            border: 1px solid grey;
+            width:200px;
+            height:60px;
+            margin-top: 20px;
+            text-align:center;
+        }
+        .box h6{
+            text-align: center;
+            margin-right: 40px;
+        }
+        .parent{
+            background-color: lightblue;
+            margin-left:50px;
+            margin-right: 50px;
+            margin-top: 10px;
+            padding: 10px 20px;
+        }
+        .txt{
+            color: orangered;
+            font-size:x-small;
+            font-weight: lighter;
+            margin-left: 60px;
+            margin-top: 100px;
+        }
+        h1{
+            margin-left: 60px;
+        }
+        h6{
+            color: grey;
+            margin-left: 60px;
+        }
+        #btn1{
+            border: 1px solid orangered;
+            background-color: orangered;
+            color: white;
+            margin-bottom: 50px;
+            margin-left: 60px;
+            width: 150px;
+            height: 50px;
+        }
+        .txt1{
+            text-align: center;
+        }
+        .txt1 h6{
+            color: orangered;
+            margin-top:50px;
+            font-weight: 200;
+        }
+        .txt1 h2{
+            font-weight: bold;
+        }
+        .parent3{
+            display: flex;
+            margin-left: 250px;
+            padding: 10px 20px;
+            gap: 10px;
+        }
+        .c1{
+            border: 1px solid grey;
+            padding: 10px 20px;
+            width: 200px;
+            height: 300px;
+        }
+        .c1 h4{
+            margin-top: 100px;
+        }
+        .c2{
+            border: 1px solid grey;
+            padding: 10px 20px;
+            width: 200px;
+            height: 300px;
+        }
+        .c2 h4{
+            margin-top: 100px;
+        }
+        .c3{
+            border: 1px solid grey;
+            padding: 10px 20px;
+            width: 200px;
+            height: 300px;
+        }
+        .c3 h4{
+            margin-top: 100px;
+        }
+        .c4{
+            border: 1px solid grey;
+            padding: 10px 20px;
+            width: 200px;
+            height: 300px;
+        }
+        .c4 h4{
+            margin-top: 100px;
+        }
+        .parent4{
+            display: flex;
+            margin-top: 50px;
+        }
+        .child3{
+            background-color: aquamarine;
+            width: 50%;
+            height: 400px;
+            margin-left: 50px;
+        }
+        .child4{
+            background-color:lavenderblush;
+            width: 50%;
+            height: 400px;
+            margin-right: 60px;
+        }
+        .txts{
+            color: orangered;
+            font-size:small;
+            font-weight: lighter;
+            margin-top: 100px;
+            margin-left: 60px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="main">
+        <div class="logo">
+            <h2>FOLIO</h2>
+        </div>
+        <div class="links">
+            <a href="Home">HOME</a>
+            <a href="About">ABOUT</a>
+            <a href="Service">SERVICE</a>
+            <a href="Portfolio">PORTFOLIO</a>
+            <a href="Blog">BLOG</a>
+            <a href="Contact">CONTACT</a>
+        </div>
+        <div class="box">
+            <h6>Have Any Questions? +8 8808 (309) 432</h6>
+            <!-- <h6>+8 8808 (309) 432</h6> -->
+        </div>
+    </nav>
+        <div class="parent">
+            <div class="child">
+                <p class="txt">NICE TO MEET YOU</p>
+                <h1>Hi,I'm Shamim</h1>
+                <h1>UI & UX DESIGNER</h1>
+                <h6>Hey, are you looking for a designer to build your Brand and grow</h6>
+                <h6>your business? Let's Shake hands with me.</h6>
+            </div>
+            <button id="btn1">Download My CV</button>
+            <div class="child1"></div>
+        </div>
+        <div class="txt1"><h6>MY SERVICES</h6>
+            <h2>What We Do</h2>
+        </div>
+        <div class="parent3">
+            <div class="c1">
+                <h4>Brand Strategy</h4>
+                <ul>
+                    <li>AndroidOS App UI</li>
+                    <li>Website UI Design</li>
+                    <li>UI Interaction Design</li>
+                    <li>Website Prototyping</li>
+                    <li>Dashboarding Onboarding</li>
+                </ul>
+            </div>
+            <div class="c2">
+                <h4>UI & UX DESIGN</h4>
+                <ul>
+                    <li>AndroidOS App UI</li>
+                    <li>Website UI Design</li>
+                    <li>UI Interaction Design</li>
+                    <li>Website Prototyping</li>
+                    <li>Dashboarding Onboarding</li>
+                </ul>
+            </div>
+            <div class="c3">
+                <h4>WEB DESIGN</h4>
+                <ul>
+                    <li>AndroidOS App UI</li>
+                    <li>Website UI Design</li>
+                    <li>UI Interaction Design</li>
+                    <li>Website Prototyping</li>
+                    <li>Dashboarding Onboarding</li>
+                </ul>
+            </div>
+            <div class="c4">
+                <h4>SOFTWARE DESIGN</h4>
+                <ul>
+                    <li>AndroidOS App UI</li>
+                    <li>Website UI Design</li>
+                    <li>UI Interaction Design</li>
+                    <li>Website Prototyping</li>
+                    <li>Dashboarding Onboarding</li>
+                </ul>
+            </div>
+        </div>
+        <div class="parent4">
+            <div class="child3">
+                <img scr="women2.jpg"alt=" ">
+            </div>
+            <div class="child4">
+                <p class="txts">ABOUT ME</p>
+                <h1 class="txtx">LOOKING FOR CREATIVE </h1>
+                <h1 class="txtxx">DESIGNER? I CAN HELP YOU!</h1>
+                <h6>I have Experince Designing in 12 year and i know for some main project </h6>
+                <h6>and  have Experince Designing in 12 year and i know for some main project </h6>
+            </div>
+        </div>
+</body>
+</html>
