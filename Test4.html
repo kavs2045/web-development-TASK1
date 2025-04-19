@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgreen;
+        }
+        .demo{
+            width: 80%;
+            height: 650px;
+            border: 1px solid lightgray;
+            border-radius: 20px;
+            display: flex;
+            background-color: azure;
+            margin: 100px;
+        }
+        .c1{
+            border: 1px solid lightgrey;
+            width: 150px;
+            height: 625px;
+            border-radius: 20px 0px 0px 20px;
+            padding: 12px 22px;
+        }
+        .c1 p{
+            font-size: small;
+        }
+        #p2{
+            color:lightgray;
+            font-weight: 700;
+            text-align: center;
+        }
+        #p3{
+            border: 2px solid blue;
+            width: 150px;
+            height: 40px;
+            background-color: blue;
+            color: white;
+            border-radius: 30px; 
+        }
+        #inner_child{
+            padding: 0px 10px;
+        }
+        #inner_child h6{
+            color: lightgray;
+            font-size: small;
+            font-weight: 600;
+        }
+        #inner_child2{
+            padding: 0px 10px;
+        }
+        .txt1{
+            padding: 0px 10px;
+            gap: 3px;
+        }
+        #l1{
+            border: 1px solid black;
+            background-color: black;
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+        }
+        #para{
+            font-size: x-small;
+            color: lightgrey;
+        }
+        .c2{
+            border: 1px solid lightgray;
+            width: 1100px;
+            height: 200px;
+            border-radius: 0px 20px 0px 0px;
+        }
+        .c3{
+            padding: 10px 22px;
+        }
+        div h1{
+            padding: 10px 22px;
+        }
+        .m1{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 22px;
+            align-items: center;
+            gap: 20px;
+        }
+        .m2{
+            display: flex;
+            gap: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .m3{
+            border: 1px solid black;
+            border-radius: 30px;
+            width: 100px;
+            height: 50px;
+            margin-right: 50px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .m3 p{
+             font-weight: bold;
+             color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <div class="c1">
+            <h2>BuyMore</h2>
+            <p id="p1"><span id="sp1"> ⚡ </span>Popular Products</p>
+            <p id="p3"><span id="sp1"> 🌐 </span>Explore New</p>
+            <p id="p1"><span id="sp1"> 🛒 </span>Clothing and Shoes</p>
+            <p id="p1"><span id="sp1"> 🎁 </span>Gifting and Giving</p>
+            <p id="p1"><span id="sp1"> 💡 </span>Inspiration</p>
+            <p id="p2">_______________________</p>
+            <div id="inner_child">
+                <h6>Quick action</h6>
+                <p>Request foe product</p>
+                <p>Add Members</p>                
+                <p id="p2">______________________</p>
+            </div>
+            <div id="inner_child2">
+                <h5 id="txt"><span style="color:lightgray;">Last Order</span>27</h5>
+            </div>
+            <div class="txt1">
+                <div id="l2">
+                    <h6>DXC Nike...<span style="color: lightgrey;">view order</span></h6>
+                </div>
+                <div id="l2">
+                    <h6>DXC Nike...<span style="color: lightgrey;">view order</span></h6>
+                </div>
+                   
+                <p id="para">See All..</p>
+            </div>
+        </div>
+        <div class="c2">
+            <div class="c3">
+                <h1>37 <span style="font-weight: lighter;">|</span></h1>
+            </div>
+            <nav class="m1">
+                <div>
+                    <h1>Explore</h1>
+                </div>
+                <div class="m2">
+                    <a href="all">🅰️ all</a>
+                    <a href="men">🙋‍♂️ Men</a>
+                    <a href="women">🙋‍♀️ Women</a>
+                </div>
+                <div class="m3">
+                    <p>Filter 🔍</p>
+                </div>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
