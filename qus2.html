@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .main{
+            display: flex;
+            border: 1px solid white;
+            background-color: white;
+            margin-left: 100px;
+        }
+        .child1{
+            width: 500px;
+            height: 700px;
+            border: 1px solid rgb(38, 184, 82);
+            background-color: rgb(38, 184, 82);
+            padding: 10px 30px;
+        }
+        #txt{
+            margin-top: 100px;
+        }
+        .child2{
+            width: 750px;
+            height: 700px;
+            border: 1px solid lightgrey;
+            background-color: white;
+        }
+        #c1{
+            margin-left: 100px;
+        }
+        #c1 h1{
+            font-size: 700;
+        }
+        #box1{
+            border: 1px solid lightgreen;
+            background-color: lightgreen;
+            color: lightgrey;
+            border-radius: 10px;
+            width: 250px;
+            height: 50px;
+            padding: 12px 22px;
+        }
+        #box2{
+            border: 1px solid lightgreen;
+            background-color: lightgreen;
+            color: lightgrey;
+            border-radius: 10px;
+            width: 500px;
+            height: 50px;
+            padding: 12px 22px;
+        }
+        h4{
+            font-weight: 400;
+        }
+        #box3{
+            border: 1px solid lightgreen;
+            background-color: lightgreen;
+            color: black;
+            border-radius: 10px;
+            width: 100px;
+            height: 50px;
+            padding: 12px 22px;
+            text-align: center;
+        }
+        #btn{
+            border: 1px solid blue;
+            background-color: blue;
+            border-radius: 30px;
+            color: white;
+            width: 200px;
+            height: 60px;
+            text-align: center;
+            margin-left: 200px;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child1">
+             <h1 id="txt"> Discover the world's top</h1>
+             <h1> Designers & Creatives</h1>
+        </div>
+        <div class="child2">
+            <div id="c1">
+                <h1>Create a new account</h1>
+                <form>
+                    <input type="text"id="box1" placeholder="First Name"required/>
+                    <input type="text"id="box1" placeholder="Last Name"required/><br><br>
+                    <input type="text"id="box2" placeholder="Email"required/><br><br>
+                    <input type="text"id="box2" placeholder="password                                                                                               👁️"required/><br><br>
+                    <h4>Birthday</h4>
+                    <select name="Month"id="box3">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Julr</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                    </select>
+                    <select name="date"id="box3">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="3">13</option>
+                        <option value="4">14</option>
+                        <option value="5">15</option>
+                        <option value="6">16</option>
+                        <option value="7">17</option>
+                        <option value="8">18</option>
+                        <option value="9">19</option>
+                        <option value="10">20</option>
+                        <option value="11">21</option>
+                        <option value="12">22</option>
+                        <option value="3">23</option>
+                        <option value="4">24</option>
+                        <option value="5">25</option>
+                        <option value="6">26</option>
+                        <option value="7">27</option>
+                        <option value="8">28</option>
+                        <option value="9">29</option>
+                        <option value="10">30</option>
+                        <option value="11">31</option>
+                    </select>
+                    <select name="year"id="box3">
+                        <option value="1999">1999</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                    </select><br><br>
+                    <h4>Gender</h4>
+                    <input type="radio"name="gender"id="box4"value="male">
+                    <label>Male</label>
+                    <input type="radio"name="gender"id="box4"value="female">
+                    <label>Female</label>
+                    <input type="radio"name="gender"id="box4"value="others">
+                    <label>Others</label><br><br>
+                    <input type="checkbox"name="verify"value="verify">
+                    <label>Creating an account means you're okay with our Terms of 
+                        Service, Privacy Policy and our defauld Notification Settings</label><br><br>
+                 </form>
+                 <button id="btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
