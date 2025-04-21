@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #task{
+            border: 2px solid black;
+            background-color: white;
+            color: lightslategrey;
+            padding: 10px;
+            width: 500px;
+            height: 40px;
+            border-radius: 10px;
+            font-size: medium ;
+        }
+        #Add{
+            border: 1px solid green;
+            background-color: green;
+            color: white;
+            border-radius: 10px;
+            width: 200px;
+            height: 50px;
+        }
+        .div{
+            border: 1px solid black;
+            background: lightgrey;
+            color: black;
+            padding: 10px 20px;
+            width: 100%;
+            height: 30px;
+            margin: 10px 0px;  
+        }
+        .strike{
+            border: 1px solid lightblue;
+            background-color: lightblue;
+            color: black;
+            padding: 5px;
+            width: 50px;
+            height: 30px;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+        .edit{
+            border: 1px solid blue;
+            background-color: blue;
+            color: black;
+            border-radius: 5px;
+            width: 50px;
+            height: 30px;
+            margin-left: 20px;
+        }
+        .remove{
+            border: 1px solid red;
+            background-color: red;
+            color: white;
+            padding:5px;
+            width: 50px;
+            height: 30px;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>To Do List <span>&#x1F4DD;</span></h1>
+    <label for="task"></label>
+    <input type="text" id="task" placeholder="Enter a task...">
+    <button id="Add">Add Task</button>
+</body>
+<script>
+    let addbutton = document.getElementById("Add");
+    let taskbar = document.getElementById("task");
+    addbutton.addEventListener("click",function(){
+        const n =document.createElement("div");
+        n.className="div";
+        n.textContent=taskbar.value;
+        taskbar.value="";
+        const strikebutton = document.createElement("button");
+        strikebutton.className="strike";
+        strikebutton.textContent="✔️" ;
+        strikebutton.addEventListener("click",function(){
+            n.style.textDecoration="line-through";
+            n.style.color="red";
+            strikebutton.style.display="none";
+        });
+        editbutton = document.createElement("button");
+        editbutton.className="edit";
+        editbutton.textContent="✏️";
+        editbutton.addEventListener("click",function(){
+            const edited=prompt(n.textContent);
+        });
+        const remove = document.createElement("button");
+        remove.className="remove";
+        remove.textContent="🗑️";
+        remove.addEventListener("click",function(){
+            n.remove();
+        });
+        n.appendChild(strikebutton);
+        n.appendChild(editbutton);
+        n.appendChild(remove);
+        document.body.appendChild(n);
+        taskbar.value="";
+     });
+</script>
+</html>
