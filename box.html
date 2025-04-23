@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Document</title>
+  <style>
+    body {
+        margin: 0;
+        background: white;
+      }
+      
+      .container {
+        display: flex;
+        height: 100vh;
+        border-radius: 10px;
+      }
+      
+      .sidebar {
+        width: 220px;
+        background-color: darkblue;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 10px;
+      }
+      
+      .logo {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .sidebar li {
+        padding: 12px;
+        cursor: pointer;
+      }
+      
+      .sidebar li.active {
+        background-color: blue;
+        border-radius: 5px;
+      }
+      
+      .logout {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        margin-top: auto;
+      }
+      
+      .main-content {
+        flex: 1;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px 0 0 10px;
+        margin: 20px 20px 20px 0;
+        overflow-y: auto;
+      }
+      
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      #ul{
+        text-align: center;
+      }
+
+      .profile {
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: black;
+      }
+      
+      .table-container {
+        margin-top: 20px;
+        text-align: center;
+      }
+      
+      .sbar {
+        width: 200px;
+        padding: 8px;
+        margin-right: 1000px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+      
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">🎓 SMART</div>
+      <nav>
+        <ul id="ul">
+          <li>Dashboard</li>
+          <li>My classes</li>
+          <li class="active">Students</li>
+          <li>Schedule</li>
+          <li>Message</li>
+          <li>Settings</li>
+        </ul>
+      </nav>
+      <button class="logout">Log out</button>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h2>Students > Journal</h2>
+        <div class="profile"></div>
+      </header>
+
+      <div class="table-container"><br>
+        <input type="text" class="sbar" placeholder="Search" >
+        <table>
+            <tr>
+              <th> <input type="checkbox">Name</th>
+              <th>Group </th>
+              <th>Homework</th>
+              <th>Attendance</th>
+              <th>Projects</th>
+              <th>Grade</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Michael Johnson</td>
+                <td>Data Scientists-2</td>
+                <td>16/28</td>
+                <td>16/28</td>
+                <td>9/12</td>
+                <td>84/100</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Emily Davis</td>
+                <td>Data Scientists-2</td>
+                <td>17/28</td>
+                <td>17/28</td>
+                <td>8/12</td>
+                <td>74/100</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">James Anderson</td>
+                <td>Data Scientists-2</td>
+                <td>16/28</td>
+                <td>17/28</td>
+                <td>7/12</td>
+                <td>92/100</td>
+            </tr>
+             <tr>
+                <td><input type="checkbox">Sarah Wilson</td>
+                <td>Data Scientists-2</td>
+                <td>15/28</td>
+                <td>12/28</td>
+                <td>7/12</td>
+                <td>67/100</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Daniel Marteniz</td>
+                <td>Data Scientists-2</td>
+                <td>17/28</td>
+                <td>17/28</td>
+                <td>9/12</td>
+                <td>84/100</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Jessica Brown</td>
+                <td>Data Scientists-2</td>
+                <td>16/28</td>
+                <td>17/28</td>
+                <td>9/12</td>
+                <td>91/100</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Christen Taylor</td>
+                <td>Data Scientists-2</td>
+                <td>14/28</td>
+                <td>17/28</td>
+                <td>7/12</td>
+                <td>65/100</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Ashley White</td>
+                <td>Data Scientists-2</td>
+                <td>15/28</td>
+                <td>15/28</td>
+                <td>6/12</td>
+                <td>52/100</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Matthew Harris</td>
+                <td>Data Scientists-2</td>
+                <td>16/28</td>
+                <td>17/28</td>
+                <td>8/12</td>
+                <td>73/100</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Olivia Thompson</td>
+                <td>Data Scientists-2</td>
+                <td>17/28</td>
+                <td>17/28</td>
+                <td>9/12</td>
+                <td>98/100</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Ethan Oliver</td>
+                <td>Data Scientists-2</td>
+                <td>16/28</td>
+                <td>17/28</td>
+                <td>8/12</td>
+                <td>82/100</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Sophia Smith</td>
+                <td>Data Scientists-2</td>
+                <td>17/28</td>
+                <td>16/28</td>
+                <td>8/12</td>
+                <td>78/100</td>
+            </tr>
+          </table>
+              </div>
+    </main>
+  </div>
+</body>
+</html>
