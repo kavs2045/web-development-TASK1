@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: steelblue;
+            margin: 50px;
+        }
+        .main{
+            display: flex;
+        }
+        #left{
+            width: 200px;
+            height: 900px;
+            border: 1px solid white;
+            border-radius: 20px 0 0 20px;
+            background-color: white;
+            padding: 10px 20px;
+        }
+        #right{
+            width: 100%;
+            height: 900px;
+            border: 1px solid white;
+            border-radius: 0 20px 20px 0;
+            background-color: white;
+            padding: 20px 20px;
+        }
+        h1{
+            margin-bottom: 50px;
+        }
+        #txt{
+            font-size: large;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        #txt1{
+            font-size: large;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        /*#txt1:hover{
+            background-color: skyblue;
+            color: white;
+            cursor: pointer;
+            width: 150px;
+            height: 30px;
+            border-radius: 5px;
+            text-align: center;
+        }*/
+        #setting{
+            margin-top: 550px;
+            margin-left: 20px;
+            font-size: large;
+        }
+        #child{
+            width: 100%;
+            height: 100%;
+            background-color: lightblue;
+            border-radius: 20px;
+            padding: 30px 30px;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        #search{
+            width: 200px;
+            height: 30px;
+            border-radius: 30px;
+            border: 1px solid white;
+            background-color: white;
+            color: gray;
+            padding: 10px 10px;
+        }
+        #c1{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        #notification{
+            width: 30px;
+            height: 30px;
+            border: 1px solid lightblue;
+            text-align: center;
+            border-radius: 30px;
+        }
+        #profile{
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            background-color:navy;
+        }
+        #op{
+            border: 1px solid lightblue;
+            color: black;
+            background-color: lightblue;
+        }
+        #mid{
+            margin-top: 40px;
+            display: flex;
+        }
+        #flight{
+            display: flex;
+            background-color: white;
+            padding: 20px 20px;
+            border-radius: 20px;
+        }
+        #txt3{
+            font-size: small;
+            font-weight: 300;
+        }
+        #txt3{
+            font-size: xx-large;
+            font-weight: 700;
+        }
+        #r2{
+            margin-left: 100px;
+            margin-top: 10px;
+        }
+        #txt4{
+            font-size: small;
+            font-weight: 500;
+        }
+        #from{
+            width: 400px;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid lightblue;
+            background-color: lightblue;
+            color: black;
+            padding: 10px 10px;
+        }
+        #c2{
+            display: flex;
+            justify-content: space-between;
+        }
+        #date{
+            background-color: lightblue;
+            border: 1px solid lightblue;
+            color: black;
+            height: 30px;
+            border-radius: 5px;
+        }
+        #qty{
+            background-color: lightblue;
+            border: 1px solid lightblue;
+            color: black;
+            height: 30px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        button{
+            width: 400px;
+            height: 40px;
+            border: 1px solid navy;
+            background-color:blue;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+        #t1{
+            display: flex;
+            justify-content: space-between;
+        }
+        #result{
+            font-size: medium;
+            font-weight: 700;
+        }
+        #sort{
+            margin-top: 20px;
+        }
+        #op1{
+            border: 1px solid lightblue;
+            background-color: lightblue;
+        }
+        #t2{
+            display: flex;
+            justify-content: space-between;
+        }
+        #txt5{
+            font-size: small;
+            font-weight: 700;
+        }
+        #dot{
+            font-size: medium;
+            font-weight: lighter;
+        }
+        #txt6{
+            font-size: x-small;
+            font-weight: lighter;
+            color: gray;
+        }
+        #box{
+            display: flex;
+            justify-content: space-between;
+        }
+        #box1{
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        #box2{
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        #tym{
+            color: blue;
+            font-size: small;
+        }
+        #rec{
+            display: flex;
+            justify-content: space-between;
+            background-color: lightblue;
+            border: 1px solid lightblue;
+            border-radius: 5px;
+            color: black;
+            padding: 10px 10px;
+        }
+        #r3{
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px 20px;
+            margin-left: 20px;
+            width: 380px;
+            height: 100%;
+        }
+        #top{
+            display: flex;
+            justify-content: space-between;
+        }
+        #top2{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        #btn{
+            border: 1px solid gray;
+            background-color: white;
+            color: black;
+            width: 100px;
+        }
+        #btn2{
+            border: 1px solid gray;
+            background-color: white;
+            color: black;
+            width: 200px;
+        }
+        #btn1{
+            border: 1px solid blue;
+            background-color: blue;
+            color: white;
+            width: 200px;
+        }
+        #range{
+            width: 350px;
+        }
+        #rec2{
+            background-color: lightblue;
+            padding: 20px 20px;
+        }
+        #gap{
+            margin-left: 200px;
+        }
+        #gap1{
+            margin-left: 213px;
+        }
+        #gap2{
+            margin-left: 180px;
+        }
+        #t4{
+            display: flex;
+            gap: 10px;
+        }
+        #btn3{
+            background-color: blue;
+            border: 1px solid navy;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            height: 40px;
+            width: 300px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="left">
+            <h1>maburo.</h1>
+            <p id="txt1">Home</p>
+            <p id="txt">Ticket</p>
+            <p id="txt">Schedule</p>
+            <p id="txt">History</p>
+            <p id="txt">Support</p>
+            <p id="setting">Settings</p>
+        </div>
+        <div id="right">
+            <div id="child">
+                <nav class="nav">
+                    <input type="text" id="search"placeholder="search something">
+                    <div id="c1">
+                        <div id="notification">🔔</div>
+                        <div id="profile"></div>
+                        <select name="name" id="op">
+                            <option>Lintang Candra</option>
+                            <option>Douceur</option>
+                        </select>
+                    </div>
+                </nav>
+                <div id="mid">
+                    <div id="l1">
+                        <div id="flight">
+                            <div id="l2"> 
+                                <p id="txt2">Where would you want to go ?</p>
+                                <p id="txt3">Book a Flight</p>
+                            </div>
+                            <div id=r2>
+                                <label id="txt4">From</label><br>
+                                <input type="search" id="from"placeholder="Warsaw Chopin Airport"><br><br>
+                                <label id="txt4">To</label><br>
+                                <input type="search" id="from"placeholder="New Yogyakarta Airport"><br><br>
+                                <div id="c2">
+                                    <div >
+                                        <label id="txt4">Date</label><br>
+                                        <input type="date"id="date"> 
+                                    </div>
+                                    <div>
+                                        <label id="txt4">Passenger</label><br>
+                                        <input type="number"id="qty"placeholder="-   qty   +"><br><br>
+                                    </div>
+                                </div>
+                                <button>Search</button>
+                            </div>
+                        </div>
+                        <div id="t1">
+                            <p id="result">Result</p>
+                            <div id="sort">
+                                <label id="txt2">Sort by</label>
+                                <select id="op1">
+                                    <option>Lowest</option>
+                                    <option>Highest</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="t2">
+                            <p id="txt5">From</p>
+                            <p id="txt5">To</p>
+                        </div>
+                        <div id="t3">
+                            <h1>WAW<span style="color: steelblue;"id="dot">--------------------------------------------------------------------------------------------------------------</span>YIA</h1>
+                        </div>
+                        <div id="box">
+                            <div id="box1">
+                                <p id="tym">4:35PM - 1:25PM</p>
+                                <h3>Garuda<span style="color: white;">---------------------------------------</span>€ 679</h3>
+                                <div id="rec">
+                                    <h5>Boeing 737</h5>
+                                    <h5>SN 44029</h5>
+                                    <h5>KO-REF</h5>
+                                </div>
+                            </div>
+                            <div id="box2">
+                                <p id="tym">4:35PM - 1:25PM</p>
+                                <h3>Garuda<span style="color: white;">-------------------------------------</span>€ 679</h3>
+                                <div id="rec">
+                                    <h5>Boeing 737</h5>
+                                    <h5>SN 44029</h5>
+                                    <h5>KO-REF</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="r1">
+                        <div id="r3">
+                            <div id="top">
+                                <p id="result">X</p>
+                                <p id="result">Filter</p>
+                                <p id="result">Reset</p>
+                            </div>
+                            <h4>Cabin  Class</h4>
+                            <div id="top2">
+                                <button id="btn">All</button>
+                                <button id="btn2">Economy</button>
+                                <button id="btn1">Business</button>
+                                <button id="btn2">First Class</button>
+                            </div>
+                            <h4>Price</h4>
+                            <div id="t2">
+                                <p>€ 600</p>
+                                <p>€ 900</p>
+                            </div>
+                            <input type="range"id="range"min="600"max="900">
+                            <h4>Departure</h4>
+                            <div id="top2">
+                                <button id="btn1">1:35 Pm - 4:25Pm</button>
+                                <button id="btn2">10:05 Am - 11:45Pm</button>
+                            </div>
+                            <div id="t2">
+                                <h4>Airline</h4>
+                                <h5>Select All</h5>
+                            </div>
+                            <div id="rec2">
+                                <label>Garuda INA</label>
+                                <input type="radio"id="gap"><br><br>
+                                <label>Luftgansa</label>
+                                <input type="radio"id="gap1"><br><br>
+                                <label>Virgin Atlantic</label>
+                                <input type="radio"id="gap2"><br>
+                            </div><br>
+                            <div id="t4">
+                                <input type="checkbox">
+                                <label><h5>Flexible <span style="font-weight: lighter;">tickets that are free to </span>reschedule</h5></label>
+                            </div>
+                            <button id="btn3">Apply Filter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
